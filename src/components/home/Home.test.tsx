@@ -35,7 +35,6 @@ describe("Home", () => {
     it("displays an organization type dropdown that changes values on different options", () => {
       const orgTypeSelect = screen.getByLabelText("I am a...");
       expect(orgTypeSelect).toHaveValue("");
-
       fireEvent.change(orgTypeSelect, {
         target: {value: OrgType.SmallBusiness},
       });
